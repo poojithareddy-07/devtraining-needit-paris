@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Practice Debugging techniques in Service now Client Scripts</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Debugging Practice</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	
+	try{
+		
+		var x = 7;
+		
+		jslog("Poo This message is from jsLog");
+		
+		jslog("Poo The value of x is :  ==", +x);
+		
+		jslog("Poo The value of state is : ==", +g_form.getValue('state'));
+		
+		jslog("Poo The current logged in user is : ==",+g_user.firstName());
+		
+		g_form.setValue('short_description',+g_form.getValue('short_description')  + " - updated field Poo");
+		
+	}
+		catch(err){
+			jslog("The run time error is:"+ err.message);
+		}
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-16 11:57:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7e7cbb670732201068c8f6fd7c1ed00b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>NeedIt Debugging Practice</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_7e7cbb670732201068c8f6fd7c1ed00b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 11:34:02</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
